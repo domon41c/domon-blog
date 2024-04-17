@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <title>domon41c</title>
+    <link rel="stylesheet" href="style.css"
+</head>
+
+<body>
+
+    <header>
+        <h2 class="logo">What determines the fate of mankind in this world?</h2>
+        <nav class="navigation">
+            <a href="about.html">About</a>
+            <button class="btnLogin-popup">Links</button>
+        </nav>
+    </header>
+
+    <audio autoplay>
+        <source src="track.mp3" type="audio/mp3">
+    </audio>
+
+    <section class="container">
+        <video class="fullscreen" src="background.mp4" playsinline autoplay muted loop>
+        </video>  
+    </section>
+    
+    <div class="wrapper">
+        <span class="icon-close"><ion-icon name="close-circle-outline"></ion-icon></span>
+        
+
+        <div class="form-box login">
+            <h2>Links</h2>
+            <form action="/login" method="post">
+                <button type="button" class="btn" onclick="window.location.href = 'https://discord.gg/xEdFDax2jt'">
+                    <span class="icon"><ion-icon name="logo-discord"></ion-icon></span>
+                    Discord
+                </button>                               
+                ------------------------------------
+                <button type="button" class="btn" onclick="window.location.href = 'https://www.youtube.com/@domon41c'">
+                    <span class="icon"><ion-icon name="logo-youtube"></ion-icon></span>
+                    YouTube
+                </button>   
+                ------------------------------------
+                <button type="button" class="btn" onclick="window.location.href = 'https://github.com/domon41c'">
+                    <span class="icon"><ion-icon name="logo-github"></ion-icon></span>
+                    GitHub
+                </button>                     
+                <div class="login-register">
+                    <p><a href="#"
+                    class="register-link"></a></p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Реєстрація</h2>
+            <form action="/register" method="post">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+                    <input type="text" name="username" required>
+                    <label>Логін</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="send-outline"></ion-icon></span>
+                    <input type="email" name="email" required>
+                    <label>Пошта</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="document-lock-outline"></ion-icon></span>
+                    <input type="password" name="password" required>
+                    <label>Пароль</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox">
+                    погоджуюсь із осіб. угодою</label>
+                </div>
+                <button type="submit" class="btn">Реєстрація</button>
+                <div class="login-register">
+                    <p>Маєте аккаунт?<a href="#"
+                    class="login-link">Увійти</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src='script.js'></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
